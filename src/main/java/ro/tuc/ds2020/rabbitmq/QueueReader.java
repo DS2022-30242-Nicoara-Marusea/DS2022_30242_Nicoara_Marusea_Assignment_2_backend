@@ -77,7 +77,7 @@ public class QueueReader {
                         break;
                     case 'f':
                         System.out.println(s.substring(17, s.length()-3));
-                        deviceDTO = deviceService.findById(UUID.fromString(s.substring(17, s.length()-3)));
+                        deviceDTO = deviceService.findById(UUID.fromString(s.substring(17, s.length()-2)));
                         Device device = new Device();
                         device.setId(deviceDTO.getId());
                         sensorDTO.setDevice(device);
